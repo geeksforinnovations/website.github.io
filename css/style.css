@@ -1,9 +1,7 @@
-/*
-Template Name: Primax
-Description: HTML5 / CSS3 Multi Page
-Version: 1.0
-Author: Cloud Software Solution Ltd.
-*/
+
+html {
+    scroll-behavior: smooth;
+  }
 
 
 body {
@@ -395,7 +393,6 @@ NAVIGATION
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
-    /*for IE9 fallback background color*/
     .no-csstransitions .navbar-default {
         background: rgba(0,0,0,.8);
     }
@@ -457,6 +454,10 @@ NAVIGATION
     border: 2px solid transparent;
 }
 
+.brand-text-color {
+    color: #fcbb3c;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
     width: 20px;
@@ -468,10 +469,14 @@ h1.logo {
     padding: 0;
 }
 
+h1.logo .logo-text {
+    font-size: 25px;
+}
+
 
 .content-wrapper {
     position: relative;
-    top: -120px;
+    /* top: -120px; */
     border: 3px solid #e3e3e3;
     border-radius: 5px;
     background: #fff;
@@ -908,6 +913,31 @@ SUPPORT WRAPPER
 }
 
 .support-wrapper a.btn {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 24px;
+}
+
+/* ------------------------------------------------------------------
+Contact WRAPPER
+--------------------------------------------------------------------- */
+.contact-wrapper {
+   /* // background: url('../img/support-bg.jpg') no-repeat center center; */
+    background-size: cover;
+    padding: 60px;
+    /* color: #fff; */
+}
+
+.contact-wrapper h2 {
+    font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #fcbb3c;;
+}
+
+.contact-wrapper a.btn {
     margin-top: 30px;
     text-transform: uppercase;
     font-size: 18px;
@@ -2418,8 +2448,8 @@ li.dropdown.menu-animating > .submenu-sub-wrapper {
     position  : absolute;
     left      : 0;
     right     : 0;
-    top       : 50%;
-    transform : translateY(-50%);
+    top       : 25%;
+    /* transform : translateY(-50%); */
     }
 
 .hero-slide .carousel-caption {
@@ -2428,7 +2458,7 @@ li.dropdown.menu-animating > .submenu-sub-wrapper {
     left        : 0;
     text-align  : left;
     text-shadow : none;
-    width : 60%;
+    /* width : 60%; */
     }
 
 .hero-slide .carousel-caption small {
@@ -2446,7 +2476,7 @@ li.dropdown.menu-animating > .submenu-sub-wrapper {
     }
 
 .hero-slide .carousel-caption h1 {
-    font-size               : 56px;
+    font-size               : 4vw;
     line-height             : 1;
     font-weight             : bold;
     text-transform          : capitalize;
