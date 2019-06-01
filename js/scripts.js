@@ -327,6 +327,12 @@ jQuery(function ($) {
 
     }());
 
+    // (function(){
+    //     $('.navbar_item').click(function() {
+    //         $('#st-container').removeClass('hippo-offcanvas-open')
+    //     })
+    // }());
+
     // ----------------------------------------------------------------
     //  Contact Form Ajax
     // ----------------------------------------------------------------
